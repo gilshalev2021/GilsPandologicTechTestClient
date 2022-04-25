@@ -1,0 +1,14 @@
+<div>
+  <google-chart *ngIf="showChart"
+                style="width: 100%"
+                [title]="title"
+                [type]="type"
+                [data]="data"
+                [dynamicResize]="true"
+                [options]="options"
+                [columns]="columns"
+                [height]="500">
+  </google-chart>
+  <br>
+  <div *ngIf="!showChart" style="text-align: center; color: red">No records exist for these dates!!!</div>
+</div>
